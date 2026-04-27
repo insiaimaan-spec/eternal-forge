@@ -6,18 +6,25 @@
     <title>Eternal Forge | Official Minting Site</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background: radial-gradient(ellipse at top, #1a0a2a, #0a0a0a);
             min-height: 100vh;
             color: #fff;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
+
         .header {
             display: flex;
             justify-content: space-between;
@@ -31,6 +38,7 @@
             border-radius: 20px;
             border: 1px solid rgba(255,100,0,0.3);
         }
+
         .logo {
             font-size: 24px;
             font-weight: 800;
@@ -39,6 +47,7 @@
             background-clip: text;
             color: transparent;
         }
+
         .verified-badge {
             display: flex;
             align-items: center;
@@ -48,11 +57,13 @@
             border-radius: 40px;
             border: 1px solid rgba(34, 197, 94, 0.3);
         }
+
         .verified-badge span {
             font-size: 14px;
             font-weight: 500;
             color: #4ade80;
         }
+
         .main-card {
             background: rgba(0,0,0,0.6);
             backdrop-filter: blur(20px);
@@ -63,6 +74,7 @@
             margin: 0 auto;
             text-align: center;
         }
+
         .nft-image {
             width: 200px;
             height: 200px;
@@ -72,12 +84,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
+
         .nft-image img {
             width: 120px;
             height: 120px;
             object-fit: contain;
         }
+
         h1 {
             font-size: 36px;
             font-weight: 800;
@@ -87,11 +102,13 @@
             background-clip: text;
             color: transparent;
         }
+
         .description {
             color: #b0b0b0;
             margin-bottom: 25px;
             line-height: 1.6;
         }
+
         .stats {
             display: flex;
             justify-content: center;
@@ -101,19 +118,23 @@
             background: rgba(0,0,0,0.4);
             border-radius: 20px;
         }
+
         .stat {
             text-align: center;
         }
+
         .stat-value {
             font-size: 28px;
             font-weight: 800;
             color: #ff8844;
         }
+
         .stat-label {
             font-size: 12px;
             color: #888;
             margin-top: 5px;
         }
+
         .price-box {
             background: rgba(255, 100, 0, 0.1);
             border-radius: 20px;
@@ -121,20 +142,24 @@
             margin-bottom: 30px;
             border: 1px solid rgba(255, 100, 0, 0.3);
         }
+
         .price-label {
             font-size: 14px;
             color: #aaa;
             margin-bottom: 5px;
         }
+
         .price {
             font-size: 48px;
             font-weight: 800;
             color: #ff8844;
         }
+
         .price small {
             font-size: 16px;
             color: #ffaa66;
         }
+
         .btn {
             width: 100%;
             padding: 16px;
@@ -145,27 +170,34 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin-bottom: 15px;
+            font-family: 'Inter', sans-serif;
         }
+
         .btn-primary {
             background: linear-gradient(135deg, #ff8844, #ff4400);
             color: white;
         }
+
         .btn-primary:hover:not(:disabled) {
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(255, 68, 0, 0.4);
         }
+
         .btn-secondary {
             background: rgba(255,255,255,0.1);
             color: white;
             border: 1px solid rgba(255,100,0,0.3);
         }
+
         .btn-secondary:hover:not(:disabled) {
             background: rgba(255,100,0,0.2);
         }
+
         .btn:disabled {
             opacity: 0.5;
             cursor: not-allowed;
         }
+
         .trust-badges {
             display: flex;
             justify-content: center;
@@ -175,6 +207,7 @@
             padding-top: 20px;
             border-top: 1px solid rgba(255,100,0,0.2);
         }
+
         .trust-item {
             display: flex;
             align-items: center;
@@ -182,9 +215,11 @@
             font-size: 12px;
             color: #888;
         }
+
         .trust-item .check {
             color: #ff8844;
         }
+
         .network-badge {
             display: inline-block;
             background: rgba(0, 82, 255, 0.2);
@@ -195,12 +230,14 @@
             margin-top: 10px;
             color: #3b82f6;
         }
+
         #status {
             margin-top: 20px;
             padding: 12px;
             border-radius: 12px;
             font-size: 14px;
         }
+
         @media (max-width: 600px) {
             .main-card { padding: 30px; }
             h1 { font-size: 28px; }
@@ -218,76 +255,142 @@
                 <span>Verified Collection</span>
             </div>
         </div>
+
         <div class="main-card">
             <div class="nft-image">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Diamond_icon.svg/512px-Diamond_icon.svg.png" alt="Diamond">
+                <img src="https://cdn-icons-png.flaticon.com/512/1822/1822891.png" alt="Diamond">
             </div>
+            
             <h1>Eternal Forge</h1>
             <p class="description">
                 Forged in the flames of eternity. Each NFT is a unique weapon, artifact, or soul from the ancient forge. Only 10,000 ever created. Holders gain access to future drops and DAO voting.
             </p>
+
             <div class="stats">
                 <div class="stat">
                     <div class="stat-value">10,000</div>
                     <div class="stat-label">Supply</div>
                 </div>
             </div>
+
             <div class="price-box">
                 <div class="price-label">Mint Price</div>
                 <div class="price">0.000567 <small>ETH</small></div>
                 <div style="font-size: 12px; color: #888; margin-top: 5px;">≈ $1.00 USD</div>
                 <div class="network-badge">⛓️ Base Mainnet</div>
             </div>
+
             <button id="connectBtn" class="btn btn-secondary">🔌 Connect Wallet</button>
             <button id="mintBtn" class="btn btn-primary" disabled>⚒️ Mint NFT</button>
+
             <div class="trust-badges">
                 <div class="trust-item"><span class="check">✓</span> Smart Contract Audited</div>
                 <div class="trust-item"><span class="check">✓</span> Liquidity Locked 5 Years</div>
                 <div class="trust-item"><span class="check">✓</span> Doxxed Team</div>
             </div>
+
             <div id="status"></div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/web3@1.8.0/dist/web3.min.js"></script>
     <script>
         const YOUR_WALLET_ADDRESS = "0xa5b241b885097A256260E6Ad0642A315448AC8F1";
+        
         const BASE_CHAIN_ID = "0x2105";
         const BASE_CHAIN_ID_DECIMAL = 8453;
+        
         const MINT_PRICE = "0.000567";
         const MINT_PRICE_WEI = "567000000000000";
-        let web3, userAccount;
+
+        let web3;
+        let userAccount;
+
         async function connectWallet() {
-            if (!window.ethereum) { alert("Please install MetaMask!"); return; }
-            try { await window.ethereum.request({ method: "wallet_switchEthereumChain", params: [{ chainId: BASE_CHAIN_ID }] }); } catch(e) {
-                if (e.code === 4902) {
-                    try { await window.ethereum.request({ method: "wallet_addEthereumChain", params: [{ chainId: BASE_CHAIN_ID, chainName: "Base Mainnet", nativeCurrency: { name: "ETH", symbol: "ETH", decimals: 18 }, rpcUrls: ["https://mainnet.base.org"], blockExplorerUrls: ["https://basescan.org"] }] }); } catch(err) { alert("Failed to add Base network."); return; }
-                } else { alert("Please switch to Base Mainnet"); return; }
+            if (!window.ethereum) {
+                alert("Please install MetaMask!");
+                return;
             }
+
+            try {
+                await window.ethereum.request({
+                    method: "wallet_switchEthereumChain",
+                    params: [{ chainId: BASE_CHAIN_ID }]
+                });
+            } catch (switchError) {
+                if (switchError.code === 4902) {
+                    try {
+                        await window.ethereum.request({
+                            method: "wallet_addEthereumChain",
+                            params: [{
+                                chainId: BASE_CHAIN_ID,
+                                chainName: "Base Mainnet",
+                                nativeCurrency: { name: "ETH", symbol: "ETH", decimals: 18 },
+                                rpcUrls: ["https://mainnet.base.org"],
+                                blockExplorerUrls: ["https://basescan.org"]
+                            }]
+                        });
+                    } catch (addError) {
+                        alert("Failed to add Base network.");
+                        return;
+                    }
+                } else {
+                    alert("Please switch to Base Mainnet");
+                    return;
+                }
+            }
+
             try {
                 web3 = new Web3(window.ethereum);
                 const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
                 userAccount = accounts[0];
-                if ((await web3.eth.getChainId()) !== BASE_CHAIN_ID_DECIMAL) { alert("Please switch to Base Mainnet"); return; }
+                
+                const chainId = await web3.eth.getChainId();
+                if (chainId !== BASE_CHAIN_ID_DECIMAL) {
+                    alert("Please switch to Base Mainnet");
+                    return;
+                }
+                
                 document.getElementById("connectBtn").innerHTML = `✅ ${userAccount.slice(0,6)}...${userAccount.slice(-4)}`;
                 document.getElementById("mintBtn").disabled = false;
                 document.getElementById("status").innerHTML = "Wallet connected! Ready to forge.";
                 document.getElementById("status").style.background = "rgba(34,197,94,0.2)";
                 document.getElementById("status").style.color = "#4ade80";
-            } catch(error) { alert("Failed to connect"); }
+            } catch(error) {
+                alert("Failed to connect wallet");
+            }
         }
+
         async function mintNFT() {
-            if (!web3 || !userAccount) { alert("Connect wallet first!"); return; }
-            if ((await web3.eth.getChainId()) !== BASE_CHAIN_ID_DECIMAL) { alert("Please switch to Base Mainnet"); return; }
+            if (!web3 || !userAccount) {
+                alert("Connect wallet first!");
+                return;
+            }
+
+            const chainId = await web3.eth.getChainId();
+            if (chainId !== BASE_CHAIN_ID_DECIMAL) {
+                alert("Please switch to Base Mainnet");
+                return;
+            }
+
             try {
                 document.getElementById("status").innerHTML = "⏳ Forging... Confirm in MetaMask.";
                 document.getElementById("status").style.background = "rgba(255,100,0,0.2)";
                 document.getElementById("status").style.color = "#ff8844";
                 document.getElementById("mintBtn").disabled = true;
-                const tx = await web3.eth.sendTransaction({ from: userAccount, to: YOUR_WALLET_ADDRESS, value: MINT_PRICE_WEI, gas: 21000 });
+
+                const tx = await web3.eth.sendTransaction({
+                    from: userAccount,
+                    to: YOUR_WALLET_ADDRESS,
+                    value: MINT_PRICE_WEI,
+                    gas: 21000
+                });
+
                 document.getElementById("status").innerHTML = `✅ Forged! TX: ${tx.transactionHash.slice(0,10)}...`;
                 document.getElementById("status").style.background = "rgba(34,197,94,0.2)";
                 document.getElementById("status").style.color = "#4ade80";
                 setTimeout(() => { document.getElementById("mintBtn").disabled = false; }, 3000);
+                
             } catch(error) {
                 document.getElementById("status").innerHTML = `❌ Failed: ${error.message}`;
                 document.getElementById("status").style.background = "rgba(239,68,68,0.2)";
@@ -295,7 +398,11 @@
                 document.getElementById("mintBtn").disabled = false;
             }
         }
-        if (window.ethereum) { window.ethereum.on('chainChanged', () => window.location.reload()); }
+
+        if (window.ethereum) {
+            window.ethereum.on('chainChanged', () => window.location.reload());
+        }
+
         document.getElementById("connectBtn").onclick = connectWallet;
         document.getElementById("mintBtn").onclick = mintNFT;
     </script>
