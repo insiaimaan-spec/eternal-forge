@@ -84,13 +84,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
         }
 
-        .nft-image img {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
+        /* CSS Diamond - guaranteed to work */
+        .diamond {
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 70px solid #00aaff;
+            transform: rotate(180deg);
         }
 
         h1 {
@@ -243,6 +246,7 @@
             h1 { font-size: 28px; }
             .price { font-size: 36px; }
             .stats { gap: 30px; }
+            .diamond { border-left: 30px solid transparent; border-right: 30px solid transparent; border-bottom: 52px solid #00aaff; }
         }
     </style>
 </head>
@@ -258,7 +262,7 @@
 
         <div class="main-card">
             <div class="nft-image">
-                <img src="https://cdn-icons-png.flaticon.com/512/1822/1822891.png" alt="Diamond">
+                <div class="diamond"></div>
             </div>
             
             <h1>Eternal Forge</h1>
